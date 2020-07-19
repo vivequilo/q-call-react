@@ -1,6 +1,7 @@
-import React from 'react'
-import styles from './styles.module.css'
+import connectToRoom from './components/QCallWrap'
+import Video from './components/Video'
+import ReactRoomEnhancer from './lib/ReactRoomEnhancer'
 
-export const ExampleComponent = ({ text }) => {
-  return <div className={styles.test}>Example Component: {text}</div>
-}
+
+export { ReactRoomEnhancer, Video }
+export default connectToRoom
